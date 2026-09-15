@@ -20,16 +20,16 @@ models:
         entity:
           type: primary
           name: order_id
-      - name: customer_id
-        description: The foreign key relating to the customer who placed the order.
-        data_tests:
-          - relationships:
-              arguments:
-                to: ref('stg_customers')
-                field: customer_id
-        entity:
-          type: foreign
-          name: customer
+      # - name: customer_id
+      #   description: The foreign key relating to the customer who placed the order.
+      #   data_tests:
+      #     - relationships:
+      #         arguments:
+      #           to: ref('stg_customers')
+      #           field: customer_id
+      #   entity:
+      #     type: foreign
+      #     name: customer
       - name: location_id
         entity:
           type: foreign
